@@ -1,0 +1,8 @@
+
+.vscode
+bin/
+obj/
+out/
+tests.postman
+.gitignore
+README.md
