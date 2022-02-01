@@ -30,8 +30,8 @@ public class ProductsService
     var product = await _dbContext.Products.FindAsync(Int32.Parse(id));
     if (product != null)
     {
-      product.Name = updatedProduct.Name;
-      product.Price = updatedProduct.Price;
+      product.Name = updatedProduct.Name ?? product.Name;
+      product.Price = updatedProduct.Price ?? product.Price;
 
       await _dbContext.SaveChangesAsync();
     }

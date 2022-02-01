@@ -36,10 +36,7 @@ public class ProductController : ControllerBase
   {
     await _productService.Create(newProduct);
 
-    return CreatedAtAction(nameof(Get), new
-    {
-      id = newProduct.Id
-    }, newProduct);
+    return new OkObjectResult(newProduct);
   }
 
   [HttpPut("product/{id}")]

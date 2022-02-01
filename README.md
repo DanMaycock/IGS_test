@@ -1,6 +1,6 @@
 ## Senior Backend Engineer - Tech Test
 
-### Build and run
+### To Build and run
 
 #### Docker Compose
 Simply run `docker-compose up --build` this will build and run the app in a docker container.
@@ -12,7 +12,7 @@ Simply run `docker-compose up --build` this will build and run the app in a dock
 
 You can confirm the application is running by navigating to the swagger interface at http://localhost:5000/swagger
 
-### Missing features
+### Obvious Missing features
 - Unit tests 
 - Error handling
 
